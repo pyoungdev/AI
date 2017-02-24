@@ -1,0 +1,16 @@
+Results
+------------------------------------------------------------------------------------------------------------------------------------------
+Going from node 0 to node 60 = 0 -> 13 -> 9 -> 15 -> 18 -> 20 -> 24 -> 29 -> 31 -> 34 -> 43 -> 50 -> 52 -> 60		Total Cost = 936
+Going from node 1 to node 61 = 1 -> 5 -> 2 -> 11 -> 14 -> 25 -> 35 -> 45 -> 46 -> 53 -> 63 -> 61		Total Cost = 901
+
+
+Choice of Algorithm
+------------------------------------------------------------------------------------------------------------------------------------------
+We were presented the problem of finding the best path from a start node to an end node by going via connected nodes in between. This path
+had to minimise the travel cost between the two nodes in the graph. The connections (edges) between each node had a weight representing the
+travel cost.This had to be taken into consideration when deciding the path which would be taken. 
+There is a number of algorithms which could be used to solve this problem but we chose the A* algorithm. A* is useful when you want to find
+a path to a single location, which suited our problem. Some algorithms such as Dijkstra's algorithm finds paths to every location, which 
+would be wasted on our program. We also used a heuristic with the A* algorithm to improve the pathfinding efficiency. By using the euclidean 
+distance heuristic, we were able to gain an estimate of the best route to our end node.
+
